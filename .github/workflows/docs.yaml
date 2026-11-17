@@ -3,6 +3,8 @@ on:
   push:
     branches:
       - main
+permissions:
+  contents: read # The docs are pushed to ntfy-docs.github.io with NTFY_DOCS_PUSH_TOKEN, not with the job token
 jobs:
   publish-docs:
     runs-on: ubuntu-latest
